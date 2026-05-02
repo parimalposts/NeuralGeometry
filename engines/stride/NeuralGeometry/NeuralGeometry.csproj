@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>NeuralGeometry</AssemblyName>
+    <RootNamespace>NeuralGeometry</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Stride 4.2 NuGet packages -->
+    <PackageReference Include="Stride.Engine"    Version="4.2.0.2188" />
+    <PackageReference Include="Stride.Games"     Version="4.2.0.2188" />
+    <PackageReference Include="Stride.Graphics"  Version="4.2.0.2188" />
+    <PackageReference Include="Stride.Rendering" Version="4.2.0.2188" />
+    <PackageReference Include="Stride.Input"     Version="4.2.0.2188" />
+    <PackageReference Include="Stride.Assets.Models" Version="4.2.0.2188" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
