@@ -1,1 +1,66 @@
-
+script: "/main/hud.gui_script"
+fonts {
+  name: "system_font"
+  font: "/builtins/fonts/default.fontc"
+}
+material: "/builtins/materials/gui.materialc"
+nodes {
+  position { x: 20.0 y: 700.0 z: 0.0 w: 1.0 }
+  rotation { x: 0.0 y: 0.0 z: 0.0 w: 1.0 }
+  scale { x: 1.0 y: 1.0 z: 1.0 w: 0.0 }
+  size { x: 400.0 y: 30.0 z: 0.0 w: 1.0 }
+  color { x: 0.4 y: 0.8 z: 1.0 w: 1.0 }
+  type: TYPE_TEXT
+  blend_mode: BLEND_MODE_ALPHA
+  text: "NEURAL GEOMETRY"
+  font: "system_font"
+  id: "title_label"
+  xanchor: XANCHOR_LEFT
+  yanchor: YANCHOR_TOP
+  pivot: PIVOT_NW
+  outline { x: 0.0 y: 0.0 z: 0.0 w: 1.0 }
+  shadow { x: 0.0 y: 0.0 z: 0.0 w: 0.7 }
+  size_mode: SIZE_MODE_AUTO
+  line_break: 0
+  font_size: 22.0
+}
+nodes {
+  position { x: 20.0 y: 668.0 z: 0.0 w: 1.0 }
+  rotation { x: 0.0 y: 0.0 z: 0.0 w: 1.0 }
+  scale { x: 1.0 y: 1.0 z: 1.0 w: 0.0 }
+  size { x: 400.0 y: 22.0 z: 0.0 w: 1.0 }
+  color { x: 1.0 y: 1.0 z: 1.0 w: 0.9 }
+  type: TYPE_TEXT
+  blend_mode: BLEND_MODE_ALPHA
+  text: "Frame: 0 / 60"
+  font: "system_font"
+  id: "frame_label"
+  xanchor: XANCHOR_LEFT
+  yanchor: YANCHOR_TOP
+  pivot: PIVOT_NW
+  outline { x: 0.0 y: 0.0 z: 0.0 w: 1.0 }
+  shadow { x: 0.0 y: 0.0 z: 0.0 w: 0.7 }
+  size_mode: SIZE_MODE_AUTO
+  line_break: 0
+  font_size: 16.0
+}
+nodes {
+  position { x: 20.0 y: 644.0 z: 0.0 w: 1.0 }
+  rotation { x: 0.0 y: 0.0 z: 0.0 w: 1.0 }
+  scale { x: 1.0 y: 1.0 z: 1.0 w: 0.0 }
+  size { x: 500.0 y: 22.0 z: 0.0 w: 1.0 }
+  color { x: 0.8 y: 0.9 z: 1.0 w: 0.9 }
+  type: TYPE_TEXT
+  blend_mode: BLEND_MODE_ALPHA
+  text: "z = [0.00, 0.00, 0.00, 0.00]"
+  font: "system_font"
+  id: "latent_label"
+  xanchor: XANCHOR_LEFT
+  yanchor: YANCHOR_TOP
+  pivot: PIVOT_NW
+  outline { x: 0.0 y: 0.0 z: 0.0 w: 1.0 }
+  shadow { x: 0.0 y: 0.0 z: 0.0 w: 0.7 }
+  size_mode: SIZE_MODE_AUTO
+  line_break: 0
+  font_size: 15.0
+}

@@ -1,0 +1,118 @@
+-- Neural Geometry — Defold visualization script
+-- Shows a radial dot projection of the morphing 3D icosphere.
+-- Data comes from shared_assets/metadata/animation_manifest_defold.json
+
+local JSON_PATH = "../../shared_assets/metadata/animation_manifest_defold.json"
+
+-- Display constants
+local CENTER_X   = 640
+local CENTER_Y   = 360
+local RADIUS     = 260    -- display radius in pixels
+local DOT_SIZE   = 5
+local FPS        = 30
+
+local manifest   = nil
+local dots       = {}     -- display objects (circles)
+local frame_idx  = 0
+local elapsed    = 0.0
+
+-- Shared message channel for HUD updates
+local HUD_URL    = msg.url("hud#gui")
+
+
+local function load_manifest()
+	-- Read the pre-decoded JSON from the pipeline
+	local sys_info = sys.get_sys_info()
+	-- Path relative to project root (adjust for platform if needed)
+	local base = sys.get_save_file("NeuralGeometry", "dummy"):gsub("dummy", "")
+	-- Use sys.load for bundled resources or io for development
+	local content = nil
+	local ok, err = pcall(function()
+		-- In Defold editor/dev mode, load from custom resources path
+		local resource_data = sys.load_resource("/assets/animation_manifest_defold.json")
+		content = resource_data
+	end)
+	if not ok or not content then
+		print("[neural_display] WARNING: Could not load manifest. Run pipeline first.")
+		return nil
+	end
+	return json.decode(content)
+end
+
+
+local function hex_color(r, g, b)
+	return { r = r, g = g, b = b, a = 1.0 }
+end
+
+
+local function create_dots(n)
+	-- Pre-create n dot sprites as box game objects
+	for i = 1, n do
+		local pos = vmath.vector3(CENTER_X, CENTER_Y, 0)
+		dots[i] = factory.create("#dot_factory", pos, nil, nil, DOT_SIZE)
+	end
+end
+
+
+local function update_dots(frame_data)
+	local verts = frame_data.vertices
+	local n = math.min(#verts, #dots)
+	for i = 1, n do
+		local v = verts[i]
+		-- Map normalized [0,1] coords to screen space with radial layout
+		local angle = (v.x - 0.5) * 2.0 * math.pi
+		local r     = (v.mag or 0.5) * RADIUS
+		local sx    = CENTER_X + math.cos(angle) * r
+		local sy    = CENTER_Y + math.sin(angle) * r
+		go.set_position(vmath.vector3(sx, sy, 0), dots[i])
+		-- Color the dot by vertex color
+		local c = v.color or {1, 0.5, 0.2, 1}
+		sprite.set_constant(dots[i], "tint",
+			vmath.vector4(c[1] or 0, c[2] or 0, c[3] or 0, 1))
+	end
+end
+
+
+function init(self)
+	manifest = load_manifest()
+	if manifest then
+		print(string.format("[neural_display] Loaded %d frames, %d vertices/frame",
+			manifest.num_frames, manifest.num_display_vertices))
+	end
+	msg.post(".", "acquire_input_focus")
+end
+
+
+function update(self, dt)
+	if not manifest then return end
+
+	elapsed = elapsed + dt
+	local new_idx = math.floor(elapsed * FPS) % manifest.num_frames + 1
+	if new_idx ~= frame_idx then
+		frame_idx = new_idx
+		local fd = manifest.frames[frame_idx]
+		update_dots(fd)
+		-- Notify HUD
+		msg.post(HUD_URL, "update_hud", {
+			frame  = fd.frame,
+			latent = fd.latent,
+		})
+	end
+end
+
+
+function on_input(self, action_id, action)
+	if action_id == hash("key_escape") then
+		msg.post("@system:", "exit", {code = 0})
+	elseif action_id == hash("key_r") and action.pressed then
+		elapsed = 0.0
+		frame_idx = 0
+	end
+end
+
+
+function final(self)
+	for _, d in ipairs(dots) do
+		go.delete(d)
+	end
+end

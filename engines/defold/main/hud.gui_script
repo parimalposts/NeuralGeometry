@@ -1,0 +1,17 @@
+-- HUD GUI script — updates text labels from neural_display messages
+
+function init(self)
+	msg.post(".", "acquire_input_focus")
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("update_hud") then
+		gui.set_text(gui.get_node("frame_label"),
+			string.format("Frame: %02d / 60", message.frame))
+
+		local z = message.latent
+		gui.set_text(gui.get_node("latent_label"),
+			string.format("z = [%.2f, %.2f, %.2f, %.2f]",
+				z[1] or 0, z[2] or 0, z[3] or 0, z[4] or 0))
+	end
+end
