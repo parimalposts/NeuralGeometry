@@ -1,0 +1,9 @@
+numpy>=1.24.0
+trimesh>=4.0.0
+scipy>=1.10.0
+Pillow>=10.0.0
+imageio>=2.28.0
+networkx>=3.0
+panda3d>=1.10.14
+pygltflib>=1.15.0
+matplotlib>=3.7.0
