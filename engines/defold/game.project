@@ -1,0 +1,45 @@
+[project]
+title = NeuralGeometry
+version = 1.0
+write_log = 0
+
+[display]
+width = 1280
+height = 720
+samples = 0
+fullscreen = 0
+update_frequency = 0
+variable_dt = 1
+display_profiles = /builtins/render/default.display_profilesc
+dynamic_orientation = 0
+
+[bootstrap]
+main_collection = /main/main.collectionc
+
+[render]
+clear_color_red = 0.05
+clear_color_green = 0.05
+clear_color_blue = 0.08
+clear_color_alpha = 1.0
+
+[graphics]
+default_texture_min_filter = linear
+default_texture_mag_filter = linear
+max_draw_calls = 4096
+
+[sound]
+gain = 1.0
+
+[resource]
+http_cache_size_mb = 32
+uri = dmengine://
+
+[input]
+repeat_delay = 0.5
+repeat_interval = 0.2
+gamepads = /builtins/input/default.gamepadsc
+game_binding = /input/all.input_bindingc
+use_accelerometer = 1
+
+[html5]
+set_prefer_hidden_attrs = 1
