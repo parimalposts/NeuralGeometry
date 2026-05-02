@@ -1,0 +1,14 @@
+!StrideBinaryAsset
+Id: b2c3d4e5-f6a7-8901-bcde-f12345678901
+Tags: []
+Material:
+    Diffuse:
+        DiffuseMap: ../../../../shared_assets/textures/activation_map_base.png
+    Metalness:
+        MetalnessMap: 0.2
+    Roughness:
+        RoughnessMap: 0.6
+    Emissive:
+        EmissiveMap: 0.0
+    UseVertexColor: true
+    DoubleSided: false
