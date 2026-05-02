@@ -1,0 +1,559 @@
+{
+  "generated_at": "2026-05-02T04:07:47.600553+00:00",
+  "num_frames": 60,
+  "num_vertices": 642,
+  "files": [
+    {
+      "path": "animations/animation_manifest.json",
+      "size_bytes": 485
+    },
+    {
+      "path": "animations/displacements.npy",
+      "size_bytes": 462368
+    },
+    {
+      "path": "animations/latent_vectors.npy",
+      "size_bytes": 1088
+    },
+    {
+      "path": "animations/vertex_colors.npy",
+      "size_bytes": 616448
+    },
+    {
+      "path": "meshes/keyframes/frame_000.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_001.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_002.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_003.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_004.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_005.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_006.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_007.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_008.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_009.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_010.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_011.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_012.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_013.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_014.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_015.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_016.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_017.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_018.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_019.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_020.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_021.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_022.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_023.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_024.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_025.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_026.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_027.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_028.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_029.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_030.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_031.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_032.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_033.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_034.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_035.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_036.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_037.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_038.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_039.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_040.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_041.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_042.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_043.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_044.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_045.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_046.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_047.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_048.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_049.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_050.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_051.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_052.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_053.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_054.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_055.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_056.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_057.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_058.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/keyframes/frame_059.npy",
+      "size_bytes": 7832
+    },
+    {
+      "path": "meshes/neural_sphere_base.bam",
+      "size_bytes": 29026
+    },
+    {
+      "path": "meshes/neural_sphere_base.glb",
+      "size_bytes": 37136
+    },
+    {
+      "path": "meshes/neural_sphere_base.mtl",
+      "size_bytes": 113
+    },
+    {
+      "path": "meshes/neural_sphere_base.obj",
+      "size_bytes": 100071
+    },
+    {
+      "path": "metadata/animation_manifest_defold.json",
+      "size_bytes": 528288
+    },
+    {
+      "path": "metadata/mesh_topology.json",
+      "size_bytes": 89
+    },
+    {
+      "path": "metadata/pipeline_manifest.json",
+      "size_bytes": 12897
+    },
+    {
+      "path": "metadata/solar2d_metadata.json",
+      "size_bytes": 184323
+    },
+    {
+      "path": "textures/activation_frames/act_frame_000.png",
+      "size_bytes": 112425
+    },
+    {
+      "path": "textures/activation_frames/act_frame_001.png",
+      "size_bytes": 116779
+    },
+    {
+      "path": "textures/activation_frames/act_frame_002.png",
+      "size_bytes": 89254
+    },
+    {
+      "path": "textures/activation_frames/act_frame_003.png",
+      "size_bytes": 118477
+    },
+    {
+      "path": "textures/activation_frames/act_frame_004.png",
+      "size_bytes": 80797
+    },
+    {
+      "path": "textures/activation_frames/act_frame_005.png",
+      "size_bytes": 96526
+    },
+    {
+      "path": "textures/activation_frames/act_frame_006.png",
+      "size_bytes": 92112
+    },
+    {
+      "path": "textures/activation_frames/act_frame_007.png",
+      "size_bytes": 107449
+    },
+    {
+      "path": "textures/activation_frames/act_frame_008.png",
+      "size_bytes": 106206
+    },
+    {
+      "path": "textures/activation_frames/act_frame_009.png",
+      "size_bytes": 106540
+    },
+    {
+      "path": "textures/activation_frames/act_frame_010.png",
+      "size_bytes": 118756
+    },
+    {
+      "path": "textures/activation_frames/act_frame_011.png",
+      "size_bytes": 90051
+    },
+    {
+      "path": "textures/activation_frames/act_frame_012.png",
+      "size_bytes": 108275
+    },
+    {
+      "path": "textures/activation_frames/act_frame_013.png",
+      "size_bytes": 78507
+    },
+    {
+      "path": "textures/activation_frames/act_frame_014.png",
+      "size_bytes": 67953
+    },
+    {
+      "path": "textures/activation_frames/act_frame_015.png",
+      "size_bytes": 76931
+    },
+    {
+      "path": "textures/activation_frames/act_frame_016.png",
+      "size_bytes": 89229
+    },
+    {
+      "path": "textures/activation_frames/act_frame_017.png",
+      "size_bytes": 84246
+    },
+    {
+      "path": "textures/activation_frames/act_frame_018.png",
+      "size_bytes": 96006
+    },
+    {
+      "path": "textures/activation_frames/act_frame_019.png",
+      "size_bytes": 69763
+    },
+    {
+      "path": "textures/activation_frames/act_frame_020.png",
+      "size_bytes": 83514
+    },
+    {
+      "path": "textures/activation_frames/act_frame_021.png",
+      "size_bytes": 62490
+    },
+    {
+      "path": "textures/activation_frames/act_frame_022.png",
+      "size_bytes": 84058
+    },
+    {
+      "path": "textures/activation_frames/act_frame_023.png",
+      "size_bytes": 83837
+    },
+    {
+      "path": "textures/activation_frames/act_frame_024.png",
+      "size_bytes": 58583
+    },
+    {
+      "path": "textures/activation_frames/act_frame_025.png",
+      "size_bytes": 80871
+    },
+    {
+      "path": "textures/activation_frames/act_frame_026.png",
+      "size_bytes": 74470
+    },
+    {
+      "path": "textures/activation_frames/act_frame_027.png",
+      "size_bytes": 95103
+    },
+    {
+      "path": "textures/activation_frames/act_frame_028.png",
+      "size_bytes": 98565
+    },
+    {
+      "path": "textures/activation_frames/act_frame_029.png",
+      "size_bytes": 82209
+    },
+    {
+      "path": "textures/activation_frames/act_frame_030.png",
+      "size_bytes": 80131
+    },
+    {
+      "path": "textures/activation_frames/act_frame_031.png",
+      "size_bytes": 103042
+    },
+    {
+      "path": "textures/activation_frames/act_frame_032.png",
+      "size_bytes": 90770
+    },
+    {
+      "path": "textures/activation_frames/act_frame_033.png",
+      "size_bytes": 114476
+    },
+    {
+      "path": "textures/activation_frames/act_frame_034.png",
+      "size_bytes": 93468
+    },
+    {
+      "path": "textures/activation_frames/act_frame_035.png",
+      "size_bytes": 92273
+    },
+    {
+      "path": "textures/activation_frames/act_frame_036.png",
+      "size_bytes": 98044
+    },
+    {
+      "path": "textures/activation_frames/act_frame_037.png",
+      "size_bytes": 59116
+    },
+    {
+      "path": "textures/activation_frames/act_frame_038.png",
+      "size_bytes": 74455
+    },
+    {
+      "path": "textures/activation_frames/act_frame_039.png",
+      "size_bytes": 69532
+    },
+    {
+      "path": "textures/activation_frames/act_frame_040.png",
+      "size_bytes": 79354
+    },
+    {
+      "path": "textures/activation_frames/act_frame_041.png",
+      "size_bytes": 69984
+    },
+    {
+      "path": "textures/activation_frames/act_frame_042.png",
+      "size_bytes": 53552
+    },
+    {
+      "path": "textures/activation_frames/act_frame_043.png",
+      "size_bytes": 35799
+    },
+    {
+      "path": "textures/activation_frames/act_frame_044.png",
+      "size_bytes": 47492
+    },
+    {
+      "path": "textures/activation_frames/act_frame_045.png",
+      "size_bytes": 38785
+    },
+    {
+      "path": "textures/activation_frames/act_frame_046.png",
+      "size_bytes": 37653
+    },
+    {
+      "path": "textures/activation_frames/act_frame_047.png",
+      "size_bytes": 35101
+    },
+    {
+      "path": "textures/activation_frames/act_frame_048.png",
+      "size_bytes": 48846
+    },
+    {
+      "path": "textures/activation_frames/act_frame_049.png",
+      "size_bytes": 46778
+    },
+    {
+      "path": "textures/activation_frames/act_frame_050.png",
+      "size_bytes": 50152
+    },
+    {
+      "path": "textures/activation_frames/act_frame_051.png",
+      "size_bytes": 49664
+    },
+    {
+      "path": "textures/activation_frames/act_frame_052.png",
+      "size_bytes": 41241
+    },
+    {
+      "path": "textures/activation_frames/act_frame_053.png",
+      "size_bytes": 59603
+    },
+    {
+      "path": "textures/activation_frames/act_frame_054.png",
+      "size_bytes": 58964
+    },
+    {
+      "path": "textures/activation_frames/act_frame_055.png",
+      "size_bytes": 67183
+    },
+    {
+      "path": "textures/activation_frames/act_frame_056.png",
+      "size_bytes": 72822
+    },
+    {
+      "path": "textures/activation_frames/act_frame_057.png",
+      "size_bytes": 80014
+    },
+    {
+      "path": "textures/activation_frames/act_frame_058.png",
+      "size_bytes": 93984
+    },
+    {
+      "path": "textures/activation_frames/act_frame_059.png",
+      "size_bytes": 102102
+    },
+    {
+      "path": "textures/activation_frames/act_frame_060.png",
+      "size_bytes": 112425
+    },
+    {
+      "path": "textures/activation_frames/act_frame_061.png",
+      "size_bytes": 116779
+    },
+    {
+      "path": "textures/activation_frames/act_frame_062.png",
+      "size_bytes": 89254
+    },
+    {
+      "path": "textures/activation_frames/act_frame_063.png",
+      "size_bytes": 118477
+    },
+    {
+      "path": "textures/activation_map_base.png",
+      "size_bytes": 112425
+    },
+    {
+      "path": "textures/activation_map_spritesheet.png",
+      "size_bytes": 5911018
+    }
+  ]
+}
