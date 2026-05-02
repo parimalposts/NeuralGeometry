@@ -1,0 +1,25 @@
+{
+    settings =
+    {
+        general =
+        {
+            -- Solar2D build settings
+        },
+        iphone =
+        {
+            plist =
+            {
+                UIStatusBarHidden = true,
+                UIInterfaceOrientation = "UIInterfaceOrientationLandscapeRight",
+            },
+        },
+        android =
+        {
+            allowAppsReadOnlyAccessToFiles = false,
+        },
+        win32 =
+        {
+            singleInstance = true,
+        },
+    },
+}
