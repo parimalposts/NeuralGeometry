@@ -1,0 +1,6 @@
+newmtl neural_mat
+Ka 0.1 0.1 0.1
+Kd 0.3 0.5 0.9
+Ks 0.2 0.2 0.2
+Ns 32.0
+map_Kd ../textures/activation_map_base.png
