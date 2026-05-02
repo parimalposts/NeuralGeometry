@@ -1,1 +1,32 @@
-
+{
+  "num_frames": 60,
+  "num_vertices": 642,
+  "latent_dim": 4,
+  "fps": 30,
+  "generated_at": "2026-05-02T04:07:47.234641+00:00",
+  "arrays": {
+    "latent_vectors": {
+      "shape": [
+        60,
+        4
+      ],
+      "dtype": "float32"
+    },
+    "displacements": {
+      "shape": [
+        60,
+        642,
+        3
+      ],
+      "dtype": "float32"
+    },
+    "vertex_colors": {
+      "shape": [
+        60,
+        642,
+        4
+      ],
+      "dtype": "float32"
+    }
+  }
+}
